@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 730" width="1080" height="730" role="img" aria-label="UML Module Diagram">
+  <defs>
+    <marker id="u-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="u-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+    <marker id="u-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1080" height="730" fill="#FFFFFF"/>
+  <rect x="8" y="8" width="1064" height="714" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <text x="540" y="38" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#0F172A">UML Module Diagram — Procedural Architecture</text>
+  <text x="540" y="59" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12.5" fill="#475569">Modules, constants, function boundaries, «calls» dependencies, and file I/O artifacts</text>
+  <line x1="30" y1="74" x2="1050" y2="74" stroke="#E2E8F0" stroke-width="1.2"/>
+
+  <path d="M 32 90 L 258 90 L 274 114 L 32 114 Z" fill="#2563EB"/>
+  <text x="148" y="106" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11.5" font-weight="700" fill="#FFFFFF">«module» expense_tracker.py</text>
+  <rect x="32" y="114" width="496" height="450" rx="6" fill="#F8FAFC" stroke="#2563EB" stroke-width="2"/>
+
+  <rect x="48" y="128" width="464" height="78" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="60" y="146" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="800" fill="#1E3A8A">MODULE CONSTANTS</text>
+  <text x="60" y="164" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" fill="#1E293B">EXPENSES_FILE = "expenses.csv"  |  DATE_FORMAT = "%d-%m-%Y"</text>
+  <text x="60" y="180" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" fill="#1E293B">CSV_HEADERS = ["Date", "Item", "Category", "Amount"]</text>
+  <text x="60" y="196" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" fill="#1E293B">MIN_AMOUNT = 0.0  |  VALID_CHOICES = {"1", "2", "3", "4"}</text>
+
+  <rect x="196" y="222" width="168" height="36" rx="6" fill="#1E3A8A"/>
+  <text x="280" y="245" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="12.5" font-weight="700" fill="#FFFFFF">main()</text>
+
+  <line x1="280" y1="258" x2="280" y2="516" stroke="#2563EB" stroke-width="1.6" stroke-dasharray="4,2"/>
+  <rect x="255" y="268" width="50" height="16" rx="4" fill="#F8FAFC"/>
+  <text x="280" y="280" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#1E3A8A">«calls»</text>
+
+  <rect x="48" y="294" width="206" height="38" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="151" y="317" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#0F172A">load_expenses()</text>
+  <line x1="280" y1="313" x2="254" y2="313" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-blue)"/>
+
+  <rect x="48" y="352" width="206" height="38" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="151" y="375" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#0F172A">display_menu()</text>
+  <line x1="280" y1="371" x2="254" y2="371" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-blue)"/>
+
+  <rect x="48" y="424" width="206" height="40" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="151" y="448" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#065F46">show_all_expenses()</text>
+  <line x1="280" y1="444" x2="254" y2="444" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-blue)"/>
+
+  <rect x="48" y="496" width="206" height="40" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="151" y="520" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" font-weight="700" fill="#065F46">calculate_category_totals()</text>
+  <line x1="280" y1="516" x2="254" y2="516" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-blue)"/>
+
+  <rect x="306" y="294" width="206" height="38" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="409" y="317" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#0F172A">add_expense()</text>
+  <line x1="280" y1="313" x2="306" y2="313" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-blue)"/>
+
+  <line x1="409" y1="332" x2="409" y2="366" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="4,2" marker-end="url(#u-purple)"/>
+  <text x="444" y="352" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#4C1D95">«calls»</text>
+
+  <rect x="306" y="366" width="206" height="176" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <text x="409" y="384" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" fill="#4C1D95">VALIDATION &amp; PERSISTENCE</text>
+
+  <rect x="322" y="394" width="174" height="28" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="409" y="412" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" fill="#0F172A">get_valid_date()</text>
+
+  <rect x="322" y="430" width="174" height="28" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="409" y="448" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" fill="#0F172A">get_non_empty_text()</text>
+
+  <rect x="322" y="466" width="174" height="28" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="409" y="484" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" fill="#0F172A">get_valid_amount()</text>
+
+  <rect x="322" y="502" width="174" height="28" rx="5" fill="#D1FAE5" stroke="#059669" stroke-width="1.2"/>
+  <text x="409" y="520" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" font-weight="700" fill="#065F46">save_expenses()</text>
+
+  <path d="M 552 90 L 798 90 L 814 114 L 552 114 Z" fill="#7C3AED"/>
+  <text x="678" y="106" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11.5" font-weight="700" fill="#FFFFFF">«module» attendance_cleaner.py</text>
+  <rect x="552" y="114" width="496" height="450" rx="6" fill="#F8FAFC" stroke="#7C3AED" stroke-width="2"/>
+
+  <rect x="568" y="128" width="464" height="78" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="580" y="146" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="800" fill="#4C1D95">MODULE CONSTANTS</text>
+  <text x="580" y="166" font-family="Consolas, Menlo, Courier New, monospace" font-size="11.5" fill="#1E293B">INPUT_FILE  = "attendance.txt"</text>
+  <text x="580" y="183" font-family="Consolas, Menlo, Courier New, monospace" font-size="11.5" fill="#1E293B">OUTPUT_FILE = "attendance_clean.csv"</text>
+  <text x="580" y="200" font-family="Consolas, Menlo, Courier New, monospace" font-size="11.5" fill="#1E293B">CSV_HEADER  = ["Student Name"]</text>
+
+  <rect x="716" y="222" width="168" height="36" rx="6" fill="#4C1D95"/>
+  <text x="800" y="245" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="12.5" font-weight="700" fill="#FFFFFF">main()</text>
+
+  <line x1="800" y1="258" x2="800" y2="430" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="4,2"/>
+  <rect x="774" y="268" width="52" height="16" rx="4" fill="#F8FAFC"/>
+  <text x="800" y="280" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#4C1D95">«calls»</text>
+
+  <rect x="576" y="302" width="198" height="54" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="675" y="325" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#1E3A8A">read_raw_attendance()</text>
+  <text x="675" y="343" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" fill="#1E40AF">Catches FileNotFoundError</text>
+  <line x1="800" y1="329" x2="774" y2="329" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-purple)"/>
+
+  <rect x="826" y="302" width="198" height="54" rx="6" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="925" y="325" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#0F172A">clean_attendance_names()</text>
+  <text x="925" y="343" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" fill="#4C1D95">List comp + set() + sorted()</text>
+  <line x1="800" y1="329" x2="826" y2="329" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-purple)"/>
+
+  <rect x="576" y="402" width="198" height="54" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="675" y="425" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#065F46">write_clean_attendance()</text>
+  <text x="675" y="443" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" fill="#047857">Writes sorted CSV rows</text>
+  <line x1="800" y1="429" x2="774" y2="429" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-purple)"/>
+
+  <rect x="826" y="402" width="198" height="54" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="925" y="425" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" font-weight="700" fill="#065F46">display_summary()</text>
+  <text x="925" y="443" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" fill="#047857">Prints report &amp; roster</text>
+  <line x1="800" y1="429" x2="826" y2="429" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#u-purple)"/>
+
+  <rect x="576" y="488" width="448" height="54" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.2"/>
+  <text x="800" y="511" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#92400E">Standard Library Dependencies</text>
+  <text x="800" y="529" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" fill="#78350F">expense_tracker: csv, math, datetime  |  attendance_cleaner: csv</text>
+
+  <rect x="154" y="624" width="252" height="66" rx="8" fill="#F1F5F9" stroke="#059669" stroke-width="2"/>
+  <text x="280" y="646" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#065F46">«artifact»</text>
+  <text x="280" y="664" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="13" font-weight="700" fill="#0F172A">expenses.csv</text>
+  <text x="280" y="681" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" fill="#475569">Persistent expense records</text>
+
+  <rect x="568" y="624" width="214" height="66" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="675" y="646" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#1E3A8A">«artifact»</text>
+  <text x="675" y="664" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="13" font-weight="700" fill="#0F172A">attendance.txt</text>
+  <text x="675" y="681" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" fill="#1E40AF">Raw student names input</text>
+
+  <rect x="812" y="624" width="228" height="66" rx="8" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+  <text x="926" y="646" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#065F46">«artifact»</text>
+  <text x="926" y="664" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="13" font-weight="700" fill="#0F172A">attendance_clean.csv</text>
+  <text x="926" y="681" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" fill="#047857">Sorted unique CSV output</text>
+
+  <line x1="280" y1="564" x2="280" y2="624" stroke="#059669" stroke-width="1.8" marker-end="url(#u-green)" marker-start="url(#u-green)"/>
+  <text x="342" y="598" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#065F46">«reads / writes»</text>
+
+  <line x1="675" y1="564" x2="675" y2="624" stroke="#2563EB" stroke-width="1.8" marker-end="url(#u-blue)"/>
+  <text x="630" y="598" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">«reads»</text>
+
+  <line x1="926" y1="564" x2="926" y2="624" stroke="#059669" stroke-width="1.8" marker-end="url(#u-green)"/>
+  <text x="970" y="598" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#065F46">«writes»</text>
+</svg>

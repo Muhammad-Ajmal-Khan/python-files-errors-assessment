@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Institute Management Tools Banner">
+  <defs>
+    <linearGradient id="bgGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="260">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="accentBar" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="260" rx="14" fill="#0F172A"/>
+  <rect x="0" y="0" width="1000" height="260" rx="14" fill="url(#bgGrad)"/>
+
+  <circle cx="940" cy="30" r="95" fill="#3B82F6" opacity="0.14"/>
+  <circle cx="520" cy="245" r="75" fill="#8B5CF6" opacity="0.14"/>
+  <rect x="0" y="0" width="1000" height="5" rx="2" fill="#38BDF8"/>
+  <rect x="0" y="0" width="1000" height="5" rx="2" fill="url(#accentBar)"/>
+
+  <rect x="40" y="28" width="178" height="24" rx="12" fill="#1E3A8A" stroke="#60A5FA" stroke-width="1"/>
+  <text x="129" y="44" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#BFDBFE" letter-spacing="1">PYTHON 3 CLI TOOLKIT</text>
+
+  <text x="40" y="96" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">Institute Management Tools</text>
+  <text x="40" y="124" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14.5" fill="#CBD5E1">Persistent CSV expense tracking &amp; automated student attendance cleaning.</text>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="600">
+    <rect x="40" y="146" width="112" height="28" rx="14" fill="#1E3A8A" stroke="#3B82F6" stroke-width="1.2"/>
+    <text x="96" y="164" text-anchor="middle" fill="#DBEAFE">File I/O &amp; CSV</text>
+
+    <rect x="162" y="146" width="136" height="28" rx="14" fill="#4C1D95" stroke="#8B5CF6" stroke-width="1.2"/>
+    <text x="230" y="164" text-anchor="middle" fill="#EDE9FE">Sets &amp; List Comp</text>
+
+    <rect x="308" y="146" width="128" height="28" rx="14" fill="#7F1D1D" stroke="#EF4444" stroke-width="1.2"/>
+    <text x="372" y="164" text-anchor="middle" fill="#FEE2E2">Error Handling</text>
+
+    <rect x="446" y="146" width="120" height="28" rx="14" fill="#064E3B" stroke="#10B981" stroke-width="1.2"/>
+    <text x="506" y="164" text-anchor="middle" fill="#D1FAE5">CLI Validation</text>
+  </g>
+
+  <line x1="40" y1="196" x2="566" y2="196" stroke="#334155" stroke-width="1"/>
+  <text x="40" y="222" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12.5" font-weight="600" fill="#E2E8F0">MUHAMMAD AJMAL KHAN</text>
+  <text x="230" y="222" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" fill="#94A3B8">github.com/Muhammad-Ajmal-Khan</text>
+
+  <rect x="596" y="26" width="372" height="208" rx="10" fill="#0B1120" stroke="#334155" stroke-width="1.5"/>
+  <rect x="596" y="26" width="372" height="30" rx="10" fill="#1E293B"/>
+  <rect x="596" y="44" width="372" height="12" fill="#1E293B"/>
+  <circle cx="616" cy="41" r="5" fill="#EF4444"/>
+  <circle cx="632" cy="41" r="5" fill="#F59E0B"/>
+  <circle cx="648" cy="41" r="5" fill="#10B981"/>
+  <text x="790" y="45" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="11" fill="#94A3B8">attendance_cleaner.py</text>
+
+  <g font-family="Consolas, Menlo, Courier New, monospace" font-size="11.5">
+    <text x="614" y="78" fill="#64748B"># Normalize &amp; deduplicate names</text>
+    <text x="614" y="98">
+      <tspan fill="#E2E8F0">formatted </tspan><tspan fill="#38BDF8">=</tspan><tspan fill="#F8FAFC"> [</tspan>
+    </text>
+    <text x="628" y="118">
+      <tspan fill="#34D399">" "</tspan><tspan fill="#E2E8F0">.join(n.strip().split()).title()</tspan>
+    </text>
+    <text x="628" y="138">
+      <tspan fill="#C084FC">for </tspan><tspan fill="#E2E8F0">n </tspan><tspan fill="#C084FC">in </tspan><tspan fill="#E2E8F0">raw_names </tspan><tspan fill="#C084FC">if </tspan><tspan fill="#E2E8F0">n.strip()</tspan>
+    </text>
+    <text x="614" y="158" fill="#F8FAFC">]</text>
+    <text x="614" y="182">
+      <tspan fill="#E2E8F0">unique_names </tspan><tspan fill="#38BDF8">= </tspan><tspan fill="#FBBF24">set</tspan><tspan fill="#E2E8F0">(formatted)</tspan>
+    </text>
+    <text x="614" y="202">
+      <tspan fill="#E2E8F0">sorted_names </tspan><tspan fill="#38BDF8">= </tspan><tspan fill="#FBBF24">sorted</tspan><tspan fill="#E2E8F0">(unique_names)</tspan>
+    </text>
+    <text x="614" y="222" fill="#64748B"># Saved to attendance_clean.csv</text>
+  </g>
+</svg>

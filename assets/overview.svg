@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 475" width="1080" height="475" role="img" aria-label="Project Overview Diagram">
+  <rect x="0" y="0" width="1080" height="475" fill="#FFFFFF"/>
+  <rect x="8" y="8" width="1064" height="459" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <text x="540" y="42" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#0F172A">Project Tasks Overview</text>
+  <text x="540" y="64" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" fill="#475569">Two modular Python utilities covering persistent CSV tracking, exception handling, sets, and list comprehensions</text>
+  <line x1="32" y1="78" x2="1048" y2="78" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <rect x="32" y="96" width="492" height="350" rx="10" fill="#F8FAFC" stroke="#2563EB" stroke-width="2"/>
+  <rect x="32" y="96" width="492" height="50" rx="10" fill="#2563EB"/>
+  <rect x="32" y="134" width="492" height="12" fill="#2563EB"/>
+  <text x="48" y="126" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Task 1: Institute Expense Tracker</text>
+  <rect x="366" y="109" width="144" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="438" y="125" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" font-weight="700" fill="#1E3A8A">expense_tracker.py</text>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <rect x="48" y="162" width="76" height="22" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+    <text x="86" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#4C1D95">TOPIC</text>
+    <text x="136" y="177" font-size="12.5" font-weight="600" fill="#0F172A">CLI Menu, Persistent CSV &amp; Error Handling</text>
+
+    <rect x="48" y="196" width="76" height="22" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+    <text x="86" y="211" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">INPUT</text>
+    <text x="136" y="210" font-size="12" fill="#334155">CLI prompts (Date, Item, Category, Amount)</text>
+    <text x="136" y="226" font-size="12" fill="#334155">Existing records loaded from expenses.csv</text>
+
+    <rect x="48" y="244" width="76" height="22" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="1"/>
+    <text x="86" y="259" text-anchor="middle" font-size="11" font-weight="700" fill="#991B1B">RULES</text>
+    <text x="136" y="258" font-size="12" fill="#334155">• Valid DD-MM-YYYY date &amp; non-empty fields</text>
+    <text x="136" y="275" font-size="12" fill="#334155">• Positive finite number (catch ValueError)</text>
+    <text x="136" y="292" font-size="12" fill="#334155">• Catch FileNotFoundError on first startup</text>
+
+    <rect x="48" y="310" width="76" height="22" rx="4" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+    <text x="86" y="325" text-anchor="middle" font-size="11" font-weight="700" fill="#065F46">OUTPUT</text>
+    <text x="136" y="324" font-size="12" fill="#334155">Saved expenses.csv, formatted expense rows,</text>
+    <text x="136" y="341" font-size="12" fill="#334155">unique categories (set), &amp; category totals</text>
+
+    <line x1="48" y1="360" x2="508" y2="360" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="48" y="380" font-size="11" font-weight="700" fill="#64748B">CONCEPTS USED</text>
+    <rect x="48" y="392" width="106" height="24" rx="12" fill="#DBEAFE"/>
+    <text x="101" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#1E3A8A">csv.DictWriter</text>
+    <rect x="164" y="392" width="98" height="24" rx="12" fill="#EDE9FE"/>
+    <text x="213" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#4C1D95">set() Unique</text>
+    <rect x="272" y="392" width="100" height="24" rx="12" fill="#FEE2E2"/>
+    <text x="322" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#991B1B">try / except</text>
+    <rect x="382" y="392" width="122" height="24" rx="12" fill="#D1FAE5"/>
+    <text x="443" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">datetime check</text>
+  </g>
+
+  <rect x="556" y="96" width="492" height="350" rx="10" fill="#F8FAFC" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="556" y="96" width="492" height="50" rx="10" fill="#7C3AED"/>
+  <rect x="556" y="134" width="492" height="12" fill="#7C3AED"/>
+  <text x="572" y="126" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Task 2: Student Attendance Cleaner</text>
+  <rect x="876" y="109" width="158" height="24" rx="12" fill="#EDE9FE"/>
+  <text x="955" y="125" text-anchor="middle" font-family="Consolas, Menlo, Courier New, monospace" font-size="10.5" font-weight="700" fill="#4C1D95">attendance_cleaner.py</text>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <rect x="572" y="162" width="76" height="22" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+    <text x="610" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#4C1D95">TOPIC</text>
+    <text x="660" y="177" font-size="12.5" font-weight="600" fill="#0F172A">Data Cleaning, Deduplication &amp; Sorting</text>
+
+    <rect x="572" y="196" width="76" height="22" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+    <text x="610" y="211" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">INPUT</text>
+    <text x="660" y="210" font-size="12" fill="#334155">Raw student names in attendance.txt</text>
+    <text x="660" y="226" font-size="12" fill="#334155">(mixed case, extra spaces, duplicates, blanks)</text>
+
+    <rect x="572" y="244" width="76" height="22" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="1"/>
+    <text x="610" y="259" text-anchor="middle" font-size="11" font-weight="700" fill="#991B1B">RULES</text>
+    <text x="660" y="258" font-size="12" fill="#334155">• Catch FileNotFoundError if input is missing</text>
+    <text x="660" y="275" font-size="12" fill="#334155">• Strip/collapse whitespace &amp; apply Title Case</text>
+    <text x="660" y="292" font-size="12" fill="#334155">• Remove duplicates via set &amp; warn if empty</text>
+
+    <rect x="572" y="310" width="76" height="22" rx="4" fill="#D1FAE5" stroke="#059669" stroke-width="1"/>
+    <text x="610" y="325" text-anchor="middle" font-size="11" font-weight="700" fill="#065F46">OUTPUT</text>
+    <text x="660" y="324" font-size="12" fill="#334155">Alphabetically sorted attendance_clean.csv</text>
+    <text x="660" y="341" font-size="12" fill="#334155">&amp; console summary (blanks/duplicates counts)</text>
+
+    <line x1="572" y1="360" x2="1032" y2="360" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="572" y="380" font-size="11" font-weight="700" fill="#64748B">CONCEPTS USED</text>
+    <rect x="572" y="392" width="112" height="24" rx="12" fill="#EDE9FE"/>
+    <text x="628" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#4C1D95">List Comp</text>
+    <rect x="694" y="392" width="102" height="24" rx="12" fill="#DBEAFE"/>
+    <text x="745" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#1E3A8A">set() Dedup</text>
+    <rect x="806" y="392" width="102" height="24" rx="12" fill="#D1FAE5"/>
+    <text x="857" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">sorted() CSV</text>
+    <rect x="918" y="392" width="110" height="24" rx="12" fill="#FEF3C7"/>
+    <text x="973" y="408" text-anchor="middle" font-size="11" font-weight="600" fill="#92400E">Empty Guard</text>
+  </g>
+</svg>
